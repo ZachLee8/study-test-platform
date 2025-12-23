@@ -1,0 +1,15 @@
+[project]
+name = "study-test-platform"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "lee", email = "504455367@qq.com"},
+]
+dependencies = []
+requires-python = "==3.9.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
