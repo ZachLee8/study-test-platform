@@ -5,7 +5,7 @@ description = "Default template for PDM package"
 authors = [
     {name = "lee", email = "504455367@qq.com"},
 ]
-dependencies = ["pyside6>=6.10.1"]
+dependencies = ["pyside6>=6.10.1", "pytest>=8.4.2"]
 requires-python = "==3.9.*"
 readme = "README.md"
 license = {text = "MIT"}
