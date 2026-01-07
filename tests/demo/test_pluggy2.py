@@ -1,12 +1,7 @@
 
 
 
-
-
 from pluggy import PluginManager, HookspecMarker, HookimplMarker
-
-
-
 
 pm = PluginManager('myproject')
 hookspec = HookspecMarker('myproject')
@@ -14,21 +9,16 @@ hookimpl = HookimplMarker('myproject')
 
 
 
-# 定义钩子规范
-
 class Hookspecs:
     @hookspec
     def test_hook(self, arg1, arg2) -> None:
         """钩子规范，定义钩子函数的接口"""
 
-
-# 定义钩子实现
 class HookImpls:
     @hookimpl  
     def test_hook(self, arg1, arg2) -> None:
         """钩子实现，实现test_hook的功能"""
         print(f"lalallalla{arg1, arg2}")
-
 
 
 # 注册钩子规范
