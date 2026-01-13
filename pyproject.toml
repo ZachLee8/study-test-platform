@@ -5,7 +5,7 @@ description = "Default template for PDM package"
 authors = [
     {name = "lee", email = "504455367@qq.com"},
 ]
-dependencies = ["pyside6>=6.10.1", "pytest>=8.4.2"]
+dependencies = ["pyside6>=6.10.1", "pytest>=8.4.2", "django>=4.2.27"]
 requires-python = "==3.9.*"
 readme = "README.md"
 license = {text = "MIT"}
@@ -13,3 +13,6 @@ license = {text = "MIT"}
 
 [tool.pdm]
 distribution = false
+
+[tool.pdm.scripts]
+R = "python manage.py runserver"
